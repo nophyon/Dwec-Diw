@@ -1,0 +1,14 @@
+header>h1{color:blue; font-size: 36}
+article h1 {color: orange}
+h1 +p{background-color: yellow}
+p:nth-last-child(2){background-color: yellow}
+img +p{background-color: yellow; color:red}
+b.destacado, #japo{color: red; font-size: 36}
+span.destacado{font-weight:bold; font-size: 24}
+
+footer a{color: green}
+footer>span{color: red; font-style: italic;}
+/*footer a:link{color: green}*/
+i{color: green; font-family: courier}
+
+a:hover{color:gray; font-weight: bold}
