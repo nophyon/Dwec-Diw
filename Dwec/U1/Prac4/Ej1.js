@@ -7,4 +7,5 @@ function Hola() {
   var salida = x + y;
   return salida;
 }
-Hola ();
+
+console.log(Hola ());
