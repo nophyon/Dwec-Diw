@@ -1,0 +1,19 @@
+*{font-family: sans-serif;}
+:not(p){font-family: courier; font-weight: bold;}
+article article{background-color: lightblue;}
+p ~ p{background-color: green;}
+[atributo]{}
+p::after{content: " Importante "; font-weight: bold; background-color: yellow;}
+p::before{ content: "Esto es importante ";}
+p:empty{ color: red; text-align: center;}
+p::first-letter{font-size: 2em;}
+p:first-of-type{color: blue; font-style: oblique;}
+p:only-of-type{font-weight: bold; font-family: cursive;}
+p:lang(en){color: green;}
+a:link{color: brown; font-style: italic;}
+a:visited{color: lightgray; font-style: italic;}
+a:hover{color: darkgreen; font-style: italic;}
+.dos p.cuatro{color: red; font-size: 0.5em; background-color: transparent;}
+header{background-image: url("banner.jpg"); color: white;}
+section#primero section article section p+a {font-family: fantasy; font-style: oblique;
+  font-size: 2em;}
