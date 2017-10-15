@@ -1,0 +1,109 @@
+*{font-family: verdana;
+  color: darkblue;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+/*Apartado b*/
+/*h1{text-align: center;
+        text-transform: capitalize;
+        border-width: 1px;
+        padding: 10px; border-radius: 10px;}*/
+
+p {text-indent: 1cm; }
+
+a:link{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: underline;}
+a:visited{text-decoration: none;}
+
+
+/*Apartado e*/
+h1{
+  width: 80px;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+/*Ejercicio 3*/
+*{
+background-image: url("background.jpg");
+}
+
+body p{
+  color:yellow;
+}
+body a:link{color: yellow;}
+body a:hover{color: yellow;}
+body a:active{color: yellow;}
+body a:visited{color: yellow;}
+a{background-image: url("seta.png");
+  padding: 0 0 0 18px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;}
+
+/*Apartado b*/
+h1{background-image: url("blue.jpg");
+   background-repeat: repeat-x;
+   border-color: white;
+   border-width: 1px;
+   color: white;
+
+}
+
+/*Apartado d*/
+#vuelta{border-radius: 5px;
+        border 1px solid;
+        border-color: white;
+        background-color: brown;
+        background-image: none;
+        padding: 1px 5px 1px 20px;
+        color: white;
+        text-align: center;
+
+}
+#vuelta:link, #vuelta:visited{display: inline-block;}
+#vuelta:hover, #vuelta:active{background-color: darkgreen;}
+
+/*Ejercicio 4*/
+
+table, tr, td, th{
+  text-align: center;
+  background-image: none;
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: yellow;
+}
+
+table caption{
+    caption-side: bottom;
+    text-align: left;
+    font-style: oblique;
+    font-family: cursive;
+    color: yellow;
+}
+
+table#tabla tr:nth-child(even) *{
+    background-color: gray;
+}
+
+#css {background-image: url("css3.png");
+      background-position: left;
+      background-size: 50px 50px;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 70px;
+      text-indent: 1.3cm;
+      vertical-align: middle;}
+
+#html {background-image: url("html5.png");
+      background-position: left;
+      background-size: 50px 50px;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 70px;
+      text-indent: 1cm;
+    vertical-align: middle;}
+td{vertical-align: bottom;}
