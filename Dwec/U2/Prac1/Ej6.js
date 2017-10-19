@@ -30,19 +30,22 @@ var z = lista[1];
 var zz= lista[2];
 
 
-  console.log("El estudiante de "+y.estudios+" "+y.nombre+" "+y.apellido+
-" "+y.apellido2+" "+"tiene una nota media de "+y.notaMedia);
+//  console.log("El estudiante de "+y.estudios+" "+y.nombre+" "+y.apellido+
+//" "+y.apellido2+" "+"tiene una nota media de "+y.notaMedia);
 
 
 
-  console.log("El estudiante de "+z.estudios+" "+z.nombre+" "+z.apellido+
-" "+z.apellido2+" "+"tiene una nota media de "+z.notaMedia);
+//  console.log("El estudiante de "+z.estudios+" "+z.nombre+" "+z.apellido+
+//" "+z.apellido2+" "+"tiene una nota media de "+z.notaMedia);
 
 
 
-  console.log("El estudiante de "+zz.estudios+" "+zz.nombre+" "+zz.apellido+
-" "+zz.apellido2+" "+"tiene una nota media de "+zz.notaMedia);
-
+//  console.log("El estudiante de "+zz.estudios+" "+zz.nombre+" "+zz.apellido+
+//" "+zz.apellido2+" "+"tiene una nota media de "+zz.notaMedia);
+for (var i = 0; i < lista.length; i++) {
+  console.log("El estudiante de "+lista[i].estudios+" "+lista[i].nombre+" "+lista[i].apellido+
+" "+lista[i].apellido2+" "+"tiene una nota media de "+lista[i].notaMedia);
+}
 // for (var x in y) {
 // console.log(x+" "+y[x]);
 // }
