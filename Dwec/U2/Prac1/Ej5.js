@@ -8,8 +8,8 @@ function Persona(nombre,apellido,apellido2){
     }
   
 }
-this.prototype.edad = Math.floor((Math.random()*100));
-this.prototype.CumplirAnyo = function (){
+Persona.prototype.edad = Math.floor((Math.random()*100));
+Persona.prototype.CumplirAnyo = function (){
       this.edad= this.edad + 1;
     }
 var juan = new Persona("Juan","Taberner","Gomis");
