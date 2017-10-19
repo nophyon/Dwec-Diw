@@ -22,7 +22,7 @@ function Estudiante(nombre, apellido, apellido2, estudios, notaMedia) {
   }
 
   this.crearPassword = function(){
-    return Juan.nombre.charAt(0).toUpperCase().concat((Juan.apellido.replace("e",3).replace("a",4)).toLowerCase(),Juan.apellido.length);
+    return Juan.nombre.charAt(0).toUpperCase().concat((Juan.apellido.replace("e",3).replace("a",4)).toLowerCase(),Juan.nombre.length);
   }
 
 }
