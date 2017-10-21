@@ -10,6 +10,9 @@ function Persona(nombre,apellido,apellido2){
   this.CumplirAnyo = function (){
       this.edad= this.edad + 1;
     }
+    /*Como he usado 2 apellidos todo el rato, voy a crear una variable apellidos
+    para poder separarlos según pide este ejercicio*/
+    this.apellidos = apellido.concat(apellido2);
 }
 
 function Estudiante(nombre, apellido, apellido2, estudios, notaMedia) {
@@ -22,30 +25,21 @@ function Estudiante(nombre, apellido, apellido2, estudios, notaMedia) {
 }
 
 var lista = [3];
-lista [0] = new Estudiante("Juan","Taberner","Gomis","DAW2",9.5);
-lista [1] = new Estudiante("Carlos", "La", "Ramona", "DAW2",7.5);
-lista [2] = new Estudiante("","El","Fantasma","ASIR2",6.4);
-var y = lista[0];
-var z = lista[1];
-var zz= lista[2];
+lista [0] = new Estudiante("Juan","Taberner ","Gomis","DAW2",9.5);
+lista [1] = new Estudiante("Carlos", "La ", "Ramona", "DAW2",7.5);
+lista [2] = new Estudiante("","El ","Fantasma","ASIR2",6.4);
 
 
-var Juan ="El estudiante de "+y.estudios+" "+y.nombre+" "+y.apellido+
-" "+y.apellido2+" "+"tiene una nota media de "+y.notaMedia;
+for (var i = 0; i < lista.length; i++) {
+  var arrayApellidos = lista[i].apellidos.split(" ");
+
+  console.log(arrayApellidos);
+
+
+console.log("Nombre: "+lista[i].nombre+"; "+"Primer Apellido: "+arrayApellidos[0]+
+"; "+"Segundo Apellido: "+arrayApellidos[1]+";");
+}
 
 
 
-var Carlos="El estudiante de "+z.estudios+" "+z.nombre+" "+z.apellido+
-" "+z.apellido2+" "+"tiene una nota media de "+z.notaMedia;
-
-
-
-var alguien ="El estudiante de "+zz.estudios+" "+zz.nombre+" "+zz.apellido+
-" "+zz.apellido2+" "+"tiene una nota media de "+zz.notaMedia;
-
-var Juan2 = "Nombre: "+Juan.substr(Juan.search("Juan"),4)+"; "+"Apellido1: "+Juan.substr(Juan.search("Taberner"),8)+"; "+"Apellido2"+" "+Juan.substr(Juan.search("Gomis"),5)+";";
-console.log(Juan2);
-var Carlos2 = "Nombre: "+Carlos.substr(Carlos.search("Carlos"),6)+"; "+"Apellido1: "+Carlos.substr(Carlos.search("La"),2)+"; "+"Apellido2"+" "+Carlos.substr(Carlos.search("Ramona"),6)+";";
-console.log(Carlos2);
-var alguien2 = "Nombre: "+alguien.substr(alguien.search("Anónimo"),7)+"; "+"Apellido1: "+alguien.substr(alguien.search("El"),2)+"; "+"Apellido2"+" "+alguien.substr(alguien.search("Fantasma"),8)+";";
-console.log(alguien2);
+// for (v

@@ -11,4 +11,4 @@ var coche = {
 
 
 
-// console.log(coche));
+console.log(coche);
