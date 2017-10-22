@@ -1,0 +1,49 @@
+a:hover{
+  background-color: darkgray;
+  color: green;
+}
+a.menu:hover{
+  background-image: url("arrow.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+  ul{list-style: none;
+    background-color: lightgrey;
+    border: 1px solid gray;
+    width: 180px;
+    padding: 0px;
+    margin: 0;
+  }
+
+  li{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  
+  li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px 5px 15px;
+    display: block;
+  }
+
+  li ul{
+    display: none;
+  }
+
+  .submenu{
+    list-style: square;
+    padding-left: 40px;
+    border: none;
+    width: auto;
+  }
+
+  .submenu1, .submenu2, .submenu3{
+    border-top: none;
+    color: green;
+  }
+
+  li:hover ul{
+    display: block;
+  }

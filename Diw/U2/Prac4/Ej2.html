@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Ej2.css">
+      </head>
+  <body>
+    <!-- <form class="" action="#" method="post">
+
+
+
+
+
+      <div class="">
+        <label for="password"> Password: </label>
+        <input type="password" name="passowrd" id="password" required="required" maxlength="8" size="3">
+      </div>
+
+    </form> -->
+    <form class="" action="index.html" method="post">
+
+
+    <fieldset>
+      <legend>Inscripción</legend>
+      <fieldset>
+        <legend>Información personal</legend>
+
+          <div>
+            <label for="nombre"> Nombre*: </label>
+            <input type="text" name="nombre" id="nombre" required="required" autofocus="autofocus" placeholder="Introduce tu nombre...">
+          </div>
+
+          <div>
+            <label for="apellido"> Apellidos*: </label>
+            <input type="text" name="apellido" id="apellido" required="required" placeholder="Introduce tus apellidos...">
+          </div>
+
+          <div>
+            <label for="email"> Email*: </label>
+            <input type="emial" name="email" id="email" required="required" placeholder="Introduce tu email...">
+          </div>
+
+          <div>
+            <label>Sexo: </label>
+            <label for="hombre" >Hombre:
+            <input type="radio" name="genero" value="hombre" id="hombre">
+            </label>
+            <label for="mujer" >Mujer:
+            <input type="radio" name="genero" value="mujer" id="mujer">
+            </label>
+          </div>
+          <br>
+          <div>
+            <label for="fechanac">Fecha de nacimiento*:</label>
+            <input type="date" name="fechaNacimiento" id="fechanac" required="required">
+          </div>
+
+<!-- Privincia, que se vale de un menú -->
+          <div>
+            <label for="provincia">Provincia:</label>
+            <select name="provincia" id="provincia">
+              <option label="Escoge tu provincia" value=0></option>
+              <option label="Alicante" value="alicante"></option>
+              <option label="Castellon" value="castellon"></option>
+              <option label="Valencia" value="valencia"></option>
+            </select>
+
+          </div>
+
+          <div>
+            <label for="poblacion">Población:</label>
+            <input type="text" name="poblacion" id="poblacion" placeholder="Introduce tu población...">
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" name="telefono" id="telefono" placeholder="Introduce tu telefono...">
+          </div>
+
+          <div>
+            <label >Motivo de Inscripcion:</label>
+            <textarea name="motivoInscripcion" id="motivoInscripcion" cols=100 placeholder="Escribe aquí tu motivo de inscripcion..."></textarea>
+          </div>
+
+          <div>
+            <label for="colorAvatar">Escoge el color de tu avatar:</label>
+            <input type="color" name="favcolor">
+            <!-- aqui un menú desplegable de colores -->
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Creación de usuario</legend>
+
+        <div class="nombreUsuario">
+          <label for="nombreUsuario">Nombre de Usuario*</label>
+          <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Introduce nombre de usuario...">
+        </div>
+
+        <div>
+          <label for="contrasenya">Contraseña*</label>
+          <input type="password" name="contrasenya" id="contrasenya" size="10" maxlength="8" placeholder="escribe contraseña">
+        </div>
+
+        <div>
+          <label for="repiteContrasenya">Repite la Contraseña*</label>
+          <input type="password" name="repiteContrasenya" id="repiteContrasenya" size="10" maxlength="8" placeholder="repite la contraseña...">
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="recibirCopias"></label>
+        <input type="checkbox" name="recibirCopias" value="recibirCopias" id="recibirCopias">
+        Deseo recibir copias de los mensajes del foro en mi correo electrónico
+      </div>
+
+      <div>
+        <label for="recibirNotificaciones"></label>
+        <input type="checkbox" name="recibirNotificaciones" value="recibirNotificaciones" id="recibirNotificaciones">
+        Deseo recibir notificaciones de próximos eventos en mi correo electrónico
+      </div>
+
+      <div>
+        <label for="registro"></label>
+        <input type="submit" name="registro" id="registro" value="Confirmar Registro">
+      </div>
+
+      <div>
+          <footer> Nota: los campos marcados con "*" son obligatorios</footer>
+      </div>
+
+    </fieldset>
+  </form>
+
+  </body>
+</html>

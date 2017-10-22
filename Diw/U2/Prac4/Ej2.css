@@ -1,0 +1,39 @@
+
+  div{
+    margin-top: 15px;
+  }
+
+  textarea{
+    height: 40px;
+    scrolling: yes;
+  }
+
+  textarea, input{
+    border-radius: 5px;
+
+  }
+
+  input [text]{
+    padding-left: 0.5em;
+  }
+
+  input:focus{
+    border: 3px solid violet;
+    outline: none;
+    background-color: lightgray;
+  }
+
+  div label{
+    width: 15%;
+    float: left;
+    text-align: :
+  }
+
+
+  footer{
+    padding: 5px 0px 0px 5px;
+    vertical-align: middle;
+    border: 1px dashed;
+    height: 25px;
+    font-style: italic;
+  }

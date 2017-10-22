@@ -1,0 +1,23 @@
+img{
+  padding: 20px;
+  width: 170px;
+  height: 150px;
+  float: left;
+}
+
+.derecha{
+  float: right;
+}
+.izquierda{
+  float: left;
+}
+#footer{
+  background-color: lightgray;
+  display: block;
+  height: 1.5em;
+}
+
+.clear{
+clear: both;
+
+}
