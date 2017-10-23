@@ -29,6 +29,26 @@
     text-align: :
   }
 
+.recibirCopias label{
+  display: inline-block;
+  float: none;
+  width: auto;
+
+}
+
+.recibirCopias input{
+  float: left;
+}
+
+.recibirNotificaciones label{
+  display: inline-block;
+  float: none;
+  width: auto;
+}
+
+.recibirNotificaciones input{
+  float: left;
+}
 
   footer{
     padding: 5px 0px 0px 5px;
