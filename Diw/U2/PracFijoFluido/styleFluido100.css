@@ -1,0 +1,178 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.container{
+ width: 100%;
+ display: table;
+ margin-top: 5px;
+}
+
+h1{
+ font-family: Verdana;
+ font-size: 24px;
+ font-weight: bold;
+}
+
+h2, menu{
+ font-family: Verdana;
+ font-size: 14px;
+ font-weight: bold;
+}
+
+header{
+ background-color: lightblue;
+ display: table;
+ width: 100%;
+}
+
+.logo{
+ width: 100px;
+ display: table-cell;
+}
+
+.logo > img{
+ width: 80px;
+ padding: 10px;
+ margin: 10px;
+ margin-left: 25px;
+ vertical-align: middle;
+}
+
+div > h1{
+ display: table-cell;
+ font-family: Helvetica;
+ font-size: 36px;
+ font-style: bold;
+ vertical-align: middle;
+ text-transform: capitalize;
+}
+
+nav{
+ display: table-cell;
+ vertical-align: top;
+ margin-top: 10px;
+}
+
+ nav{
+ margin-top: 20px;
+ margin-right: -90px;
+}
+
+nav ul{
+ display: inline-block;
+ margin-top: 20px;
+}
+
+nav li{
+ display: inline-block;
+ background-color: steelblue;
+ padding: 10px;
+ margin-left: 10px;
+}
+
+nav a{
+ text-decoration: none;
+ color: white;
+}
+
+div.articles{
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: table-cell;
+  box-sizing: content-box;
+}
+
+ section.container div.sideMenu aside{
+   background-color: lightgrey;
+   display: table-cell;
+   width: 100%;
+}
+
+div.sideMenu{
+  padding-left: 10px;
+}
+
+aside ul{
+  margin-right: 20px;
+  list-style: none;
+   padding-right: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 15px;
+}
+
+.sideMenu ul a{
+  text-decoration: none;
+   color: black;
+   width: auto;
+}
+
+.sideMenu li ul{
+display:none;
+}
+
+
+
+li:hover ul{
+ width: 100%;
+ margin-left: 20px;
+ display: table-cell;
+}
+
+
+
+.entrada1, .entrada2{
+
+ width: 100%;
+ background-color: linen;
+ border: 2px solid lightgray;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ padding-left: 20px;
+ padding-right: 20px;
+
+}
+
+.entrada2{
+ margin-top: 10px;
+}
+
+.entrada1 img{
+ width: 100%;
+ margin-left: 10px;
+}
+
+ .comentario{
+ color: steelblue;
+ margin-left: 550px;
+}
+
+
+time{
+ color:gray;
+}
+
+figcaption{
+font-style: italic;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.clear{
+  clear: both;
+}
+
+footer{
+ margin-top: 20px;
+ width: 100%;
+}
+
+footer p{
+ text-align: center;
+ margin: 20px;
+}

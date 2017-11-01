@@ -1,0 +1,184 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body{
+  max-width: 960px;
+}
+.container{
+ width: 100%;
+ display: table;
+ margin-top: 0.52%;
+}
+
+h1{
+ font-family: Verdana;
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+h2, menu{
+ font-family: Verdana;
+ font-size: 0.875em;
+ font-weight: bold;
+}
+
+header{
+ background-color: lightblue;
+ display: table;
+ width: 100%;
+}
+
+.logo{
+ width: 10.42%;
+ display: table-cell;
+}
+
+.logo > img{
+ width: 80px;
+ padding: 10px;
+ margin: 10px;
+ margin-left: 25px;
+ vertical-align: middle;
+}
+
+div > h1{
+ display: table-cell;
+ font-family: Helvetica;
+ font-size: 2.25em;
+ font-style: bold;
+ vertical-align: middle;
+ text-transform: capitalize;
+}
+
+nav{
+ display: table-cell;
+ vertical-align: top;
+ margin-top: 10px;
+}
+
+ nav{
+ margin-top: 20px;
+ margin-right: -90px;
+}
+
+nav ul{
+ display: inline-block;
+ margin-top: 20px;
+}
+
+nav li{
+ display: inline-block;
+ background-color: steelblue;
+ padding: 10px;
+ margin-left: 10px;
+}
+
+nav a{
+ text-decoration: none;
+ color: white;
+}
+
+div.articles{
+  margin-top: 0px;
+  padding-top: 0.52%;
+  padding-left: 1.04%;
+  display: table-cell;
+  /*box-sizing: content-box;*/
+  width: 72.92%;
+}
+
+ section.container div.sideMenu aside{
+   background-color: lightgrey;
+   display: table-cell;
+   width: 20.83%;
+}
+
+div.sideMenu{
+  padding-left: 1.042%;
+  margin-right: 2.08%;
+}
+
+aside ul{
+  margin-right: 2.08%;
+  list-style: none;
+   padding-right: 3.13%;
+   padding-top: 2.08%;
+   padding-bottom: 2.08%;
+   padding-left: 1.67%;
+}
+
+.sideMenu ul a{
+  text-decoration: none;
+   color: black;
+   width: auto;
+}
+
+.sideMenu li ul{
+display:none;
+}
+
+
+
+li:hover ul{
+ width: 20.83%;
+ margin-left: 2.08%;
+ display: table-cell;
+}
+
+
+
+.entrada1, .entrada2{
+ margin-left: 10.42%;
+ margin-right: 0.52%;
+ width: 85.92%;
+ background-color: linen;
+ border: 2px solid lightgray;
+ padding-top: 3.13%;
+ padding-bottom: 3.13%;
+ padding-left: 2.08%;
+ padding-right: 2.08%;
+
+}
+
+.entrada2{
+ margin-top: 1.04%;
+}
+
+.entrada1 img{
+ width: 20.83%;
+ margin-left: 1.04%;
+}
+
+ .comentario{
+ color: steelblue;
+ margin-left: 80.29%;
+}
+
+
+time{
+ color:gray;
+}
+
+figcaption{
+font-style: italic;
+margin-top: 0.52%;
+margin-bottom: 0.52%;
+}
+
+.clear{
+  clear: both;
+}
+
+footer{
+ margin-top: 2.08%;
+ width: 100%;
+}
+
+footer p{
+ text-align: center;
+ margin: 2.08%;
+}
