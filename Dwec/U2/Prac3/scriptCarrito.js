@@ -25,7 +25,7 @@ function hacerPedido(){
   if(compra.length>0){
 
     if(x){
-      location.assign("pedidoOK.html");
+      location.assign("pedidoOk.html");
     }else{
      location.assign("carrito.html");
     }
