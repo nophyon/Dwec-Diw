@@ -1,0 +1,9 @@
+
+/*SM*/
+@media (min-width: 576px) and (max-width: 767px) {
+.col-sm-none {display: none;}
+}
+/*XS*/
+@media (max-width: 575px) {
+.col-none {display: none;}
+}

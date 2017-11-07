@@ -1,0 +1,15 @@
+*{color: black;
+ }
+
+.menu{color: white;
+
+     }
+.menu ul li a{
+  background-color: black;
+         }
+
+header.cabecera, header.cabecera h1{background-color: white;}
+
+article{background-color: lightgray;}
+
+article figure{display: none;}
