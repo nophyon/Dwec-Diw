@@ -1,9 +1,9 @@
 
+/*MD*/
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-none {display: none;}
+}
 /*SM*/
 @media (min-width: 576px) and (max-width: 767px) {
 .col-sm-none {display: none;}
-}
-/*XS*/
-@media (max-width: 575px) {
-.col-none {display: none;}
 }
