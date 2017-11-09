@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Crea elementos del DOM</title>
+    <script type="text/javascript">
+      onload = function creaDOM(){
+        /*Aquí se escribe lo que sea necesario*/
+
+        var content = document.body;
+        var titular = document.createElement("h1");
+        titular.innerHTML = "Un titular";
+        titular.style.color = "blue";
+        titular.style.fontFamily ="Arial";
+        content.appendChild(titular);
+        var img = document.createElement("img");
+        img.setAttribute("src","https://wow.gamepedia.com/media/wow.gamepedia.com/thumb/c/c0/Worgen_warrior.jpg/300px-Worgen_warrior.jpg?version=bd3e946b2ed25a5274afb8f6b4dadd13");
+        img.style.width = "50px";
+        img.style.height = "50px";
+        content.appendChild(img);
+      }
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
