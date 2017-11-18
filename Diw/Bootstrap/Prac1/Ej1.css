@@ -1,0 +1,37 @@
+*{
+  border: 1px solid black;
+
+
+}
+.cabesita{
+  height: 70px;
+}
+.header2{
+  height: 90px;
+}
+.block{
+  height: 300px;
+}
+.item{
+  height: 80px;
+}
+.piesesito{
+  height: 60px;
+  background-color: lime;
+}
+
+.bgs-lime{
+  background-color: lime;
+}
+.bgs-fuchsia{
+  background-color: fuchsia;
+}
+.bgs-blue{
+  background-color: blue;
+}
+.bgs-red{
+  background-color: red;
+}
+.bgs-salmon{
+  background-color: salmon;
+}

@@ -1,0 +1,53 @@
+*{
+  border: 1px solid black;
+}
+
+.bgs-lime{
+  background-color: lime;
+}
+
+.bgs-lightGray{
+  background-color: lightGray;
+}
+
+.bgs-cyan{
+  background-color: cyan;
+}
+
+.bgs-lightBlue{
+  background-color: lightBlue;
+}
+
+.bgs-salmon{
+  background-color: orange;
+}
+
+.cabecera{
+  padding-top: 15px;
+  height: 60px;
+}
+
+.cyanBox{
+  padding-top: 15px;
+  height: 60px;
+}
+
+.grayBox{
+  padding-top: 20px;
+  height: 75px;
+}
+
+.blueBox{
+  padding-top: 20px;
+  height: 75px;
+}
+
+.salmonBox{
+  padding-top: 20px;
+  height: 75px;
+}
+
+.pie{
+  padding-top: 5px;
+  height: 40px;
+}
