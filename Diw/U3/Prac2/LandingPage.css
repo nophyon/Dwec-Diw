@@ -1,0 +1,85 @@
+.contenedor{
+  padding: 0px;
+}
+
+.header{
+  background-color: lightGreen;
+  text-align: center;
+  margin: auto;
+
+}
+
+
+
+.nombre , .logo{
+  /* float: left; */
+  padding: 0px;
+  margin: auto;
+}
+
+.logo{
+
+  width: 60px;
+  height: 60px;
+  f
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+.CUERO{
+  margin: auto;
+}
+
+.contenido{
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.contenido{
+  width: 100%;
+  padding: 0px;
+
+}
+.contenido picture source, .contenido picture img{
+  width: 100%;
+  margin: auto;
+
+}
+
+
+.cuerpo2{
+  margin-top: 20px;
+}
+
+.cuerpo2 .conocenos{
+  border-right: 1px solid black;
+  padding: 0px;
+}
+
+.cuerpo2 .conocenos img{
+  width: 80%;
+  height: 80%;
+}
+
+
+
+
+
+ .contacta img{
+   margin-top: 20px;
+  text-align: center;
+}
+
+
+
+.PIES{
+  margin: auto;
+  background-color: orange;
+  text-align: center;
+}
