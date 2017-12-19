@@ -1,0 +1,54 @@
+article h1 i{
+  background: url('./iconos/spriteIconos.png');
+  display: inline-block;
+}
+
+.icon-novedades {
+  background-position:0 -30px;
+  height: 30px;
+  width: 39px;
+}
+
+
+
+.icon-estudios{
+  background-position: 0 -60px;
+    height: 30px;
+    width: 39px;
+}
+
+.icon-contacta{
+  background-position: 0 -90px;
+    height: 30px;
+    width: 39px;
+}
+
+footer i {
+  margin-left: 5px;
+  /* font-size: 30px; */
+  padding: 5px 6px;
+  /* font-size: 20px; */
+  font-size: 4em;
+}
+
+.fa-facebook{
+  padding: 5px 11px;
+
+  color: #3b5998;
+}
+
+.fa-twitter{
+  color: #00aced;
+}
+
+.fa-linkedin{
+  color: #0077B5;
+}
+
+.fa-twitch{
+  color: #6441a5;
+}
+
+i:hover {
+  background-color: lightGray;
+}
