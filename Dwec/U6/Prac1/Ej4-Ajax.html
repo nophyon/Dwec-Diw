@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5 Ajax</title>
+    <script type="text/javascript">
+      onload = function(){
+
+        if (window.XMLHttpRequest) {
+            var xhr = new XMLHttpRequest();
+        }else if (ActiveXObject("Microsoft.XMLHTTP")){
+        //esto es equivalente al window.XMLHttpRequest
+          var xhr = new ActiveXObject("Microsoft.XMLHTTP")
+        }
+
+        document.forms[0].onsubmit = function(e){
+            e.preventDefault(); //nunca enviaré el formulario porque me traeré los datos con Ajax en lugar de enviarlos con submit
+            var url = "LoginJSON.php";
+            xhr.open("POST",url,true);
+            xhr.onreadystatechange = function(){
+              if(xhr.readyState == 4 &&  xhr.status == 200){
+
+                var objJSON = JSON.parse(xhr.responseText);
+                var token = objJSON.token;
+                if (token == 5678) {
+                  localStorage.setItem("token",token);
+                  window.location.assign("homeLogado.html");
+                }else{
+                  var salida = "Mostramos las opciones para darse de alta o recuperar password";
+                }
+                document.getElementById("resLogin").innerHTML = salida;
+
+
+              } else if(xhr.readyState == 4){
+                alert("Se ha producido un error al obtener los datos"
+                + "\n\nreadyState:" + xhr.readyState
+                + "\nstatus: " + xhr.status
+                + "\nheaders: " + xhr.getAllResponseHeaders());
+              }
+            }
+            //Cogemos el valor que ha puesto el usuario:
+            var us = document.getElementById("usuario").value;
+            var pass = document.getElementById("pass").value;
+
+
+            function obtenDatosLogin(){
+              var usuario = document.getElementById("usuario").value;
+              var password = document.getElementById("pass").value;
+              var strLogin = "usuario=" + encodeURIComponent(us) + "&password=" + encodeURIComponent(pass);
+              console.log(strLogin);
+              return strLogin;
+            }
+            // Por defecto, POST envía los datos con el formato url por lo que no tengo que especificarlo así:
+            // xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+            var datosLogin = obtenDatosLogin();
+
+
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+
+            xhr.send(datosLogin);
+
+
+
+          }
+
+      }
+
+    </script>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <div>Usuario: <input type="text" id="usuario" name="usuario" placeholder="Introduce tu usuario..." maxlength="40"></input></div>
+      <div>Contraseña: <input type="password" id="pass" name="pass"></input></div>
+      <div id="resLogin">Resultado :</div>
+      <input type="submit" name="boton" id="enviar" value="Enviar"></input>
+    </form>
+  </body>
+</html>

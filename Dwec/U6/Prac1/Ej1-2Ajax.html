@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1</title>
+    <script type="text/javascript">
+
+        onload = function(){
+          if (window.XMLHttpRequest) {
+              var xhr = new XMLHttpRequest();
+          }else if (ActiveXObject("Microsoft.XMLHTTP")){
+          //esto es equivalente al window.XMLHttpRequest
+            var xhr = new ActiveXObject("Microsoft.XMLHTTP")
+          }
+
+          btn.onclick = function(){
+            var num = Math.ceil(Math.random()*4);
+            console.log(num);
+            var url = "Noticia"+num+".txt";
+            xhr.open("GET",url,true);
+            xhr.onreadystatechange = muestraResultado;
+            xhr.send();
+          }
+
+          function muestraResultado(){
+
+            // console.log(xhr.readyState);
+            // console.log(xhr.status);
+            // console.log(xhr.getAllResponseHeaders());
+            cabecera.innerHTML += xhr.getAllResponseHeaders()+"<br>"+"<br>";
+
+            estado.innerHTML += xhr.readyState +"<br>"+"<br>";
+
+            codigosEstado.innerHTML +=  xhr.status+"<br>"+"<br>";
+
+            if (xhr.readyState == 4 && xhr.status == 200) {
+              resultado.innerHTML = xhr.responseText;
+            }else if ( xhr.status !=200  && xhr.readyState == 4){
+              window.location.assign("Errorpage.html");
+
+            }
+          }
+
+          
+
+        }
+    </script>
+
+  </head>
+  <body>
+    <h1>Ejemplo 1 de AJAX</h1>
+
+
+
+    <button id="btn">Noticias!</button>
+    <p id="resultado"></p>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="cabecera">
+      <b>CABECERAS: </b> <br>
+    </div>
+
+    <div id="estado">
+      <b>ESTADOS:</b> <br>
+    </div>
+
+
+    <div id="codigosEstado">
+      <b>CODIGOS: </b> <br>
+    </div>
+
+  </body>
+</html>
