@@ -9,10 +9,15 @@
        $("img").width(400).hide();
        $("body").css("text-align","center");
        $("button").hide();
+       var plegado = true;
        $("h1").click(function(){
-         var plegado = true;
+
          if(plegado){
-           $(this).html("Haz click aquí para plegar la imagen!");
+           $("h1").html("Haz click aquí para plegar la imagen!");
+           plegado = false;
+         }else {
+           $("h1").html("Haz click aquí para desplegar la imagen!");
+           plegado = true;
          }
 
 
@@ -20,6 +25,17 @@
          $("img").toggle();
        });
 
+       $("#masAncho").click(function(){
+         $("img").width(function(index,v){
+           return v + 20;
+         });
+       });
+
+       $("#menosAncho").click(function(){
+         $("img").width(function(index,v){
+           return v - 20;
+         });
+       });
 
      });
 
