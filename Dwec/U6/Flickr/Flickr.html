@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo API FLICKR</title>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//Aquí puedes programar con JQuery
+		$("button").click(function(){
+			$("#imagenes").html("");
+
+			var load = $("<img/>").attr("src","load.gif").attr("width","125px").attr("height","100px");
+			$("#imagenes").append(load);
+
+			var valor = $("#selector").val();
+			var url = "https://api.flickr.com/services/feeds/photos_public.gne?tags=";
+			url += valor + "&format=json&jsoncallback=?";
+			$.getJSON(url,function(data,st,xhr){
+					$("#imagenes").html("");
+				var arrFotos = data.items;
+
+						var i = 0;
+
+						$.each(arrFotos,function(i,item){
+							if (i<10) {
+								console.log("imagen nº "+i+" src='"+item.media.m+"'");
+
+								var foto = $("<img/>").attr("src",item.media.m).attr("width","250px").attr("height","200px");
+								$("#imagenes").append(foto);
+								i++;
+							}
+						});
+				});
+		});
+	});
+</script>
+</head>
+<body>
+
+	<h1>Mi Flickr</h1>
+	<div id="imagenes"></div>
+		<button>Dibujar</button>
+		<select id="selector">
+			<option value="landscapes">Paisajes</option>
+			<option value="puppies">Cachorros</option>
+			<option value="iguana">Iguanas</option>
+			<option value="bird">Pajarillos</option>
+			<option value="beared%20dragon">Dragon Barbudo</option>
+			<option value="turtle">Tortugas</option>
+			<option value="snake">Serpientess</option>
+			<option value="gecko">Geckos</option>
+			<option value="chameleon">Camaleones</option>
+			<option value="salamander">Salamandras</option>
+		</select>
+
+</body>
+</html>
