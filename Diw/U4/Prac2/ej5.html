@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    div{
+        border: 2px solid black;
+      }
+
+      .sqr{
+        background-color: yellow;
+        width: 70px;
+        height: 70px;
+        margin: 80px;
+        text-align: center;
+        padding-top: 20px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+      $(".sqr").on("click",function(){
+
+
+
+        $(".sqr").animate({width: "90px",
+        height: "90px", paddingTop: "30px",
+        borderWidth: "5px", borderRadius: "50px"}, "slow");
+
+        $(".sqr").fadeOut("90000000000000000");
+        $(".sqr").fadeIn("90000000000000000");
+
+      });
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="sqr">Click me!</div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <script src="./js/jquery-3.2.1.min.js"></script>
+      <script>
+       /*Aquí va el código*/
+       $(document).ready(function(){
+
+       $("img").width(400).hide();
+       $("body").css("text-align","center");
+       $("button").hide();
+       $("h1").click(function(){
+         var plegado = true;
+         if(plegado){
+           $(this).html("Haz click aquí para plegar la imagen!");
+         }
+
+
+         $("button").toggle();
+         $("img").toggle();
+       });
+
+
+     });
+
+     </script>
+  </head>
+  <body>
+    <h1>Haz click aquí para desplegar la imagen!</h1>
+    <div class="contenedor">
+      <img src="mundo.jpg">
+      <button id="masAncho">+</button>
+      <button id="menosAncho">-</button>
+    </div>
+  </body>
+</html>
